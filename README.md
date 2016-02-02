@@ -1,6 +1,6 @@
-# angular2-jspm-starter
+# angular2-data-example
 
-This is yet another starter repo for an angular2 project using jspm and typescript.
+This is a version of the angular2 Heroes tutorial that uses angular2-data.
 
 ## Prerequisites
 
