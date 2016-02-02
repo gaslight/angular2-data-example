@@ -15,10 +15,9 @@ export class HeroService extends Store {
 		return this.query(Hero);
 	}
 
-	// getHero(id: number) {
-  //   return Promise.resolve(HEROES)
-  //     .then(heroes => heroes.filter(h => h.id === id)[0]);
-	// }
+	getHero(id: number) {
+    return this.find(Hero, id);
+	}
 }
 
 

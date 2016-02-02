@@ -58,18 +58,18 @@ app.get('/heroes', function (req, res) {
 });
 
 app.get('/heroes/:id', function (req, res) {
-  res.json(findHero(req.params.id));
+  res.json({data: findHero(req.params.id)});
 });
 
 app.post("/heroes", function(req, res) {
   console.log(req.body);
-  res.json(createHero(req.body));
+  res.json({data: createHero(req.body)});
 });
 
 app.put("/heroes/:id", function(req, res) {
-  candidate = findHero(req.params.id);
-  _.extend(candidate, req.body);
-  res.json(candidate);
+  var hero = findHero(req.params.id);
+  _.extend(hero, req.body);
+  res.json({data: hero});
 });
 
 app.listen(8000, function () {
