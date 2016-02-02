@@ -3,22 +3,25 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "typescript",
   typescriptOptions: {
-    emitDecoratorMetadata: true
-  },
-  packages: {
-    "app": {
-      defaultExtension: "ts"
-    }
+    "emitDecoratorMetadata": true
   },
   paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
 
+  packages: {
+    "app": {
+      "defaultExtension": "ts"
+    }
+  },
+
   map: {
-    "angular2": "npm:angular2@2.0.0-beta.1",
-    "typescript": "npm:typescript@1.5.3",
+    "angular2": "npm:angular2@2.0.0-beta.2",
+    "angular2-data": "node_modules/angular2-data/dist/angular2-data.umd.js",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
+    "typescript": "npm:typescript@1.5.3",
+    "underscore": "npm:underscore@1.8.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -55,7 +58,7 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:angular2@2.0.0-beta.1": {
+    "npm:angular2@2.0.0-beta.2": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.0.2",
       "es6-shim": "npm:es6-shim@0.33.13",

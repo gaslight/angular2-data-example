@@ -5,19 +5,24 @@
   "jspm": {
     "directories": {},
     "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-beta.1"
+      "angular2": "npm:angular2@^2.0.0-beta.2",
+      "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {
       "typescript": "npm:typescript@1.5.3"
     }
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.1",
+    "angular2": "^2.0.0-beta.2",
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.13",
+    "express": "^4.13.4",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
-    "zone.js": "^0.5.10"
+    "underscore": "^1.8.3",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
     "live-server": "^0.9.0"
