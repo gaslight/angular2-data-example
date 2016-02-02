@@ -1,6 +1,6 @@
 # angular2-data-example
 
-This is a version of the angular2 Heroes tutorial that uses angular2-data.
+This is a version of the angular2 Heroes tutorial that uses [angular2-data](https://github.com/gaslight/angular2-data).
 
 ## Prerequisites
 
